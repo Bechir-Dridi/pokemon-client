@@ -14,7 +14,8 @@ export default function Login({ setSubmissionSuccess, submissionSuccess, userDat
 
     async function getUserData() {
         try {
-            const response = await fetch(`http://localhost:5000/auth/user/${inputEmail}`, {
+            // const response = await fetch(`http://localhost:5000/auth/user/${inputEmail}`, {
+            const response = await fetch(`https://pokemon-api-b167.onrender.com/auth/user/${inputEmail}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -37,7 +38,8 @@ export default function Login({ setSubmissionSuccess, submissionSuccess, userDat
         e.preventDefault();
 
         try {
-            const response = await fetch('http://localhost:5000/auth/login', {
+            // const response = await fetch('http://localhost:5000/auth/login', {
+            const response = await fetch('https://pokemon-api-b167.onrender.com/auth/login', {
                 method: 'POST',
                 body: JSON.stringify({
                     email: inputEmail,

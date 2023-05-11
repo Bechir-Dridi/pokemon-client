@@ -45,7 +45,8 @@ export default function Header({ pokemonNames }) {
         e.preventDefault();
 
         try {
-            const response = await fetch('http://localhost:5000/auth/logout', {
+            // const response = await fetch('http://localhost:5000/auth/logout', {
+            const response = await fetch('https://pokemon-api-b167.onrender.com/auth/logout', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -94,7 +95,8 @@ export default function Header({ pokemonNames }) {
 
         try {
             // Send POST request to server with form data
-            const response = await axios.post('http://localhost:5000/wall', formData, {
+            // const response = await axios.post('http://localhost:5000/wall', formData, {
+            const response = await axios.post('https://pokemon-api-b167.onrender.com/wall', formData, {
                 withCredentials: true // Don't forget to specify this if you need cookies
             });
 
