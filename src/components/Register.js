@@ -21,7 +21,7 @@ export default function Register() {
 
         try {
             // const response = await fetch('http://localhost:5000/auth', {
-            const response = await fetch('https://pokemon-api-b167.onrender.com/auth', {
+            const response = await fetch('https://pokemon-server-vtr5.onrender.com/auth', {
                 method: 'POST',
                 body: JSON.stringify({
                     email: inputEmail,

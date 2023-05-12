@@ -11,7 +11,7 @@ export default function Wallpapers() {
     async function getWallpapers() {
         try {
             // const response = await fetch(`http://localhost:5000/wall`, {
-            const response = await fetch(`https://pokemon-api-b167.onrender.com/wall`, {
+            const response = await fetch(`https://pokemon-server-vtr5.onrender.com/wall`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
