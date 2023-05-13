@@ -57,7 +57,8 @@ export default function Wallpapers() {
                 <div className="carousel-inner">
                     {wallpapers.map((wallpaper, index) => (
                         <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={wallpaper._id}>
-                            <img className="d-block w-100 " src={`http://localhost:5000/uploads/${wallpaper.filename}`} alt={wallpaper.filename} style={{ objectFit: 'cover', height: '400px', width: "100%" }} />
+                            {/* <img className="d-block w-100 " src={`http://localhost:5000/uploads/${wallpaper.filename}`} alt={wallpaper.filename} style={{ objectFit: 'cover', height: '400px', width: "100%" }} /> */}
+                            <img className="d-block w-100 " src={`https://pokemon-server-vtr5.onrender.com/uploads/${wallpaper.filename}`} alt={wallpaper.filename} style={{ objectFit: 'cover', height: '400px', width: "100%" }} />
                         </div>
                     ))}
                 </div>
